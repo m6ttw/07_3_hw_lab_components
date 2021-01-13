@@ -6,7 +6,7 @@
 import { eventBus } from '../main.js';
 
 export default {
-  name: 'list-item',
+  name: 'list-component',
   props: ['country'],
   methods: {
     handleClick(){
