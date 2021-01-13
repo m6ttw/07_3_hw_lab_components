@@ -1,20 +1,20 @@
 <template lang="html">
   <div>
     <ul>
-      <list-item v-for="(country, index) in countries" :country="country" :key="index"></list-item>
+      <list-component v-for="(country, index) in countries" :country="country" :key="index"></list-component>
     </ul>
   </div>
 
 </template>
 
 <script>
-import ListItem from './ListItem.vue';
+import ListComponent from './ListComponent.vue';
 
 export default {
   name: 'countries-list',
   props: ['countries'],
   components: {
-    "list-item": ListItem
+    "list-component": ListComponent
   }
 }
 </script>
